@@ -1,0 +1,342 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .blog-name {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('3_0_image9.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+.hero-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff7f50;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #e56740;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+}
+
+#featured-recipes,
+#main-courses {
+    background-color: #fff;
+}
+
+#featured-recipes .recipes-grid,
+#main-courses .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recipe {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe h3 {
+    color: #ff7f50;
+    margin-top: 10px;
+}
+
+#latest-posts .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.post {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 40%;
+    height: auto;
+}
+
+.post-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #ff7f50;
+}
+
+.post-text p {
+    margin: 0;
+    color: #666;
+}
+
+#categories .categories-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.category {
+    flex: 0 0 auto;
+    width: 200px;
+    position: relative;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.category h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#about {
+    background-color: #fff;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#about p {
+    width: 55%;
+    line-height: 1.6;
+    color: #666;
+}
+
+#subscribe {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#subscribe input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#subscribe button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff7f50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#subscribe button:hover {
+    background-color: #e56740;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-logo {
+    margin-bottom: 20px;
+}
+
+footer .footer-links,
+footer .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ff7f50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e56740;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 810px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #hero {
+        height: 300px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    #featured-recipes .recipes-grid,
+    #main-courses .recipes-grid,
+    #latest-posts .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about img {
+        width: 80%;
+    }
+
+    #about p {
+        width: 100%;
+        text-align: center;
+    }
+}

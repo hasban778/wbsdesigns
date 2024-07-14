@@ -1,0 +1,365 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #e9ecef;
+    height: 500px;
+}
+
+#hero .hero-container {
+    display: flex;
+    width: 100%;
+}
+
+#hero .hero-image {
+    flex: 1;
+    background: url('9_0_image5.jpeg') no-repeat center center/cover;
+}
+
+#hero .hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero .hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero .button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#hero .button:hover {
+    background-color: #0056b3;
+}
+
+#featured-recipes .recipes {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.recipe {
+    min-width: 300px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#latest-posts {
+    padding: 50px 0;
+    background-color: #f5f5f5; /* Add a subtle background color */
+}
+
+#latest-posts h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#latest-posts .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.post {
+    display: flex;
+    background: #fff; /* White background for each post */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.post-image {
+    flex: 1;
+    max-width: 150px; /* Fixed width for images */
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-text {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-text h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-text h3 .tag {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.post-text p {
+    color: #666;
+    line-height: 1.5;
+}
+
+#categories .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    position: relative;
+    cursor: pointer;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.category-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#about {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-container .about-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+#subscribe {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#subscribe input[type="email"] {
+    padding: 15px;
+    flex: 1;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    max-width: 300px;
+}
+
+#subscribe input[type="email"]:focus {
+    border-color: #007BFF;
+}
+
+#subscribe button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#subscribe button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+footer .footer-links {
+    text-align: center;
+    flex: 1;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-links ul li {
+    margin: 0 10px;
+}
+
+footer .footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+footer .footer-links ul li a:hover {
+    color: #007BFF;
+}
+
+footer .footer-social {
+    text-align: right;
+    flex: 1;
+}
+
+footer .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .footer-social ul li {
+    margin-left: 10px;
+}
+
+footer .footer-social ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .footer-social ul li a:hover {
+    color: #007BFF;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Blog - Recipes</title>
+    <link rel="stylesheet" href="recipes2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="blog-name">Recipe Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe.html">Recipes</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="recipes">
+        <div class="container">
+            <h2>Our Recipes</h2>
+            <div class="category-buttons">
+                <button onclick="filterRecipes('all')">All</button>
+                <button onclick="filterRecipes('appetizers')">Appetizers</button>
+                <button onclick="filterRecipes('main-courses')">Main Courses</button>
+                <button onclick="filterRecipes('desserts')">Desserts</button>
+            </div>
+            <div class="recipes-grid">
+                <!-- Appetizers -->
+                <div class="recipe appetizers">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/Bruschetts/image.jpeg" alt="Appetizer 1">
+                    <h3>Appetizer 1</h3>
+                </div>
+                <div class="recipe appetizers">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/Bruschetts/image2.jpeg" alt="Appetizer 2">
+                    <h3>Appetizer 2</h3>
+                </div>
+                <div class="recipe appetizers">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/Bruschetts/image3.jpeg" alt="Appetizer 1">
+                    <h3>Appetizer 1</h3>
+                </div>
+                <div class="recipe appetizers">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/caprese-skewers/image.jpeg" alt="Appetizer 2">
+                    <h3>Appetizer 2</h3>
+                </div>
+                <div class="recipe appetizers">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/caprese-skewers/image2.jpeg" alt="Appetizer 2">
+                    <h3>Appetizer 2</h3>
+                </div>
+                <div class="recipe appetizers">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/caprese-skewers/image3.jpeg" alt="Appetizer 2">
+                    <h3>Appetizer 2</h3>
+                </div>
+
+
+                <!-- Main Courses -->
+                <div class="recipe main-courses">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/caprese-skewers/image.jpeg" alt="Main Course 1">
+                    <h3>Main Course 1</h3>
+                </div>
+                <div class="recipe main-courses">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/caprese-skewers/image2.jpeg" alt="Main Course 2">
+                    <h3>Main Course 2</h3>
+                </div>
+                <!-- Desserts -->
+                <div class="recipe desserts">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/Prosiutto/image.jpeg" alt="Dessert 1">
+                    <h3>Dessert 1</h3>
+                </div>
+                <div class="recipe desserts">
+                    <img src="/home/tmask/Desktop/blog/chatgpt_code/images/categorys/appettizers/Prosiutto/image2.jpeg" alt="Dessert 2">
+                    <h3>Dessert 2</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="11_0_image9.jpeg" alt="About Us">
+                <p>Welcome to our blog! We are passionate about sharing our love for cooking and baking. Our goal is to inspire you to create amazing dishes in your own kitchen. Whether you are a seasoned chef or a novice cook, you'll find something to enjoy here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest recipes and blog posts. Enter your email below to subscribe to our weekly newsletter.</p>
+            <form>
+                <input type="email" placeholder="Enter your email here...">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h1 class="blog-name">Recipe Blog</h1>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe.html">Recipes</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function filterRecipes(category) {
+            const recipes = document.querySelectorAll('.recipe');
+            recipes.forEach(recipe => {
+                if (category === 'all' || recipe.classList.contains(category)) {
+                    recipe.style.display = 'block';
+                } else {
+                    recipe.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

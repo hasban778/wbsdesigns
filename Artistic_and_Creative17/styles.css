@@ -1,0 +1,304 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ffe4e1;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff69b4;
+}
+
+header .blog-name {
+    font-size: 2.5em;
+    font-family: 'Pacifico', cursive;
+    color: #ff69b4;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('17_1_image6.jpeg') no-repeat center center;
+    background-size: cover;
+    filter: grayscale(30%) sepia(40%) contrast(90%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 228, 225, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay h2 {
+    font-size: 2.5em;
+    font-family: 'Caveat', cursive;
+    color: #f7409b;
+    margin: 0;
+}
+
+.hero-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff69b4;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #ff1493;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Pacifico', cursive;
+}
+
+#featured-recipes {
+    background-color: #fff;
+}
+
+#featured-recipes .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recipe {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 2px solid #ff69b4;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe h3 {
+    font-family: 'Caveat', cursive;
+    color: #ff69b4;
+    margin-top: 10px;
+}
+
+#latest-posts .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.post {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff69b4;
+}
+
+.post img {
+    width: 40%;
+    height: auto;
+    filter: grayscale(30%) sepia(40%) contrast(90%);
+}
+
+.post-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #ff69b4;
+    font-family: 'Pacifico', cursive;
+}
+
+#categories {
+    background-color: #ffe4e1;
+}
+
+#categories .categories-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    color: #ff69b4;
+}
+
+#about {
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 4px solid #ff69b4;
+}
+
+.about-content p {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    max-width: 800px;
+}
+
+#subscribe {
+    background-color: #ffe4e1;
+}
+
+#subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#subscribe input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#subscribe button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#subscribe button:hover {
+    background-color: #ff1493;
+}
+
+footer {
+    background-color: #ffe4e1;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #ff69b4;
+}
+
+footer .blog-name {
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    color: #ff69b4;
+    margin: 0;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-links ul li {
+    margin: 0 15px;
+}
+
+footer .footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+footer .footer-links ul li a:hover {
+    color: #ff69b4;
+}
+
+footer .footer-social a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .footer-social a:hover {
+    color: #ff69b4;
+}

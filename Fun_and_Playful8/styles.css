@@ -1,0 +1,322 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f0;
+    color: #333;
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin: 0;
+    color: #ff6f61;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#hero {
+    background: url('8_0_image7.jpeg') no-repeat center center/cover;
+    height: 500px;
+    position: relative;
+}
+
+#hero .hero-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .hero-overlay {
+    background: rgba(255, 105, 97, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero .button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#hero .button:hover {
+    background-color: #ff4500;
+}
+
+#featured-recipes .recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recipe {
+    position: relative;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.recipe:hover img {
+    transform: scale(1.05);
+}
+
+.recipe-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#latest-posts .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff6f61;
+}
+
+.post-text {
+    padding: 15px;
+    text-align: center;
+}
+
+.post-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #ff6f61;
+}
+
+.post-text p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+#categories .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.category {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category:hover img {
+    transform: scale(1.05);
+}
+
+.category-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ff6f61;
+}
+
+#about {
+    background-color: #ffe4e1;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#about img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#subscribe {
+    background-color: #ffcccb;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#subscribe h2 {
+    font-size: 2.5em;
+}
+
+#subscribe p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#subscribe input[type="email"] {
+    padding: 15px;
+    flex: 1;
+    border: 2px solid #ff6f61;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    max-width: 300px;
+}
+
+#subscribe input[type="email"]:focus {
+    border-color: #ff4500;
+}
+
+#subscribe button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#subscribe button:hover {
+    background-color: #ff4500;
+}
+
+footer {
+    background-color: #ffe4e1;
+    color: #ff6f61;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .footer-links ul li a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+footer .footer-links ul li a:hover {
+    color: #ff4500;
+}
+
+footer .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-social ul li a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .footer-social ul li a:hover {
+    color: #ff4500;
+}
